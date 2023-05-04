@@ -4,7 +4,7 @@
 
 console.log("Alo Mundo !!")
 
-// Forma "Complexa"
+// Forma "Alternativa"
 
 const mensagem = "Alo Mundo"
 
