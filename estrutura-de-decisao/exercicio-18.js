@@ -51,3 +51,6 @@ if (validacao === false) {
 } else {
     console.log(`a Data é valida !`)
 }
+
+
+// nao lembrei como usar a data em modo dd/mm/aaaa 
