@@ -34,6 +34,6 @@ let aumento = salarioInput * desconto
 let salarioNovo = salarioInput + aumento
 
 console.log(`Seu salario antigo era de : ${salarioInput}\n` +
-    `O Percentual do aumento foi de ${desconto} vezes\n` +
+    `O Percentual do aumento foi de ${desconto * 100} % \n` +
     `O aumento aplicado foi de ${aumento} Reais\n` +
     `Apos o aumento seu Salario é de : ${salarioNovo} Reais`)
