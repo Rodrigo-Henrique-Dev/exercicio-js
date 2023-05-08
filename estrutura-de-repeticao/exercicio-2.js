@@ -2,10 +2,12 @@
     2 - Faça um programa que leia um nome de usuário e a sua senha e não aceite a senha igual ao nome do usuário, mostrando uma mensagem de erro e voltando a pedir as informações.
 */
 
-let nota = parseInt(prompt(" Escreva a Nota : "))
+let usuario = prompt(" Escreva o seu Usuario : ").toLowerCase()
+let senha = prompt("Escreva a sua Senha : ").toLowerCase()
 
-for (let i = 0; nota < 0 || nota > 10; i++) {
-    nota = parseInt(prompt(" Escreva a Nota valida entre (0 a 10):"))
+for (let i = 0; usuario === senha; i++) {
+    usuario = prompt(" Escreva um Login Diferente da Senha :").toLowerCase()
+    senha = prompt("Escreva sua Senha Diferente do Login :").toLowerCase()
 }
 
-console.log(`Sua nota foi : ${nota}`)
+console.log("Seu cadastro Foi Criado : ")
