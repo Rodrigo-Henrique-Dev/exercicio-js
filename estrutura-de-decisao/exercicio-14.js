@@ -45,5 +45,5 @@ if (media >= 0 && media < 4) {
 }
 
 console.log(`Sua media foi de : ${media}\n` +
-    `Seu conceito Foi : ${conceito}\n` +
+    `Seu conceito é : ${conceito}\n` +
     `Voce foi ${situacao}`)
