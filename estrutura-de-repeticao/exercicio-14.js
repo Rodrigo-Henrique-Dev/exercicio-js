@@ -2,21 +2,21 @@
     14 - Faça um programa que peça 10 números inteiros, calcule e mostre a quantidade de números pares e a quantidade de números impares.
 */
 
-let contador = 1
-let pares = 0
-let impares = 0
+let n = 1
+let p = 0
+let i = 0
 
-while (contador <= 10) {
-    let numeros = parseInt(prompt("Escreva 10 Numeros Inteiros : "))
-    numeros++
-    if (numeros % 2 === 0) {
-        numeros = pares
-        pares++
+while (n <= 10) {
+    let a = parseInt(prompt("Escreva 10 Numeros Inteiros : "))
+    n++
+    if (a % 2 === 0) {
+        a = p
+        p++
     } else {
-        numeros = impares
-        impares++
+        a = i
+        i++
     }
 }
 
-alert(`A quantidade de numeros Pares é : ${pares}`)
-alert(`A quantidade de numeros Impares é : ${impares}`)
+alert(`A quantidade de numeros Pares é : ${p}`)
+alert(`A quantidade de numeros Impares é : ${i}`)
