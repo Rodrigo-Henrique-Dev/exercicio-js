@@ -16,9 +16,3 @@ console.log(`O maior numero é o : ${max}`)
 
 
 
-/* 
-    Quando testado no console Math.Max(numeros) le apenas o primeiro numero 
-    O Resto sao definidos como NaN
-    O Array Numeros é setado como Object
-    Variavel Max Quando fora do FOR setada como Undefined
-*/
