@@ -4,3 +4,14 @@
         5! =  5 . 4 . 3 . 2 . 1 = 120
 */
 
+const numero = parseInt(prompt("Escreva o Numero que Deseja Fatorar : "))
+let resultado = 1
+let i = 1
+
+while (i <= numero) {
+    resultado *= i
+    i += 1
+}
+console.log(`${numero} = ${resultado}`)
+
+// Como armazenar o numero do Indice para Printar igual ao exemplo
