@@ -7,11 +7,22 @@
 const numero = parseInt(prompt("Escreva o Numero que Deseja Fatorar : "))
 let resultado = 1
 let i = 1
-
+let multiplicadores = ""
+let indice = 1
 while (i <= numero) {
-    resultado *= i
+    resultado = resultado * i
     i += 1
 }
-console.log(`${numero} = ${resultado}`)
 
-// Como armazenar o numero do Indice para Printar igual ao exemplo
+indice = numero
+while (indice >= 1) {
+    if (multiplicadores === "") {
+        multiplicadores = indice.toString()
+    } else {
+        multiplicadores = multiplicadores + " * " + indice.toString()
+    }
+    indice -= 1
+}
+console.log(`${numero}! = ${multiplicadores} = ${resultado}`)
+
+
