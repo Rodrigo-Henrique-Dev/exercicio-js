@@ -1,16 +1,17 @@
 /*
     3 - Faça um Programa que leia 4 notas, mostre as notas e a média na tela.
 */
-let mostra = ""
-let soma = 0
+let media = 0
+let notas = []
 for (let i = 0; i < 4; i++) {
-    const notas = parseFloat(prompt("Escreva sua Nota : "))
-    soma = soma + notas
-    if (mostra === "") {
-        mostra = notas.toString()
-    } else {
-        mostra = mostra + " - " + notas.toString()
-    }
+    notas.push(parseInt(prompt("Escreva uma das Notas : ")))
+    media = notas / 4
 }
-let media = soma / 4
-console.log(`as notas fora ${mostra}\n Sua media foi de : ${media}`)
+console.log(`Suas notas foram  ${notas}\n` +
+    `Sua media foi de ${media}`)
+
+
+/*
+Quando Feito a Media, da o Elemento NaN
+Como passar de Object para Number 
+*/
