@@ -1,10 +1,8 @@
 /*
     1 - Faça um Programa que leia um vetor de 5 números inteiros e mostre-os.
 */
-
-let mostra = ""
+let vetor = []
 for (let i = 0; i < 5; i++) {
-    const numeros = parseInt(prompt("Escreva um Numero"))
-    mostra = mostra + " - " + numeros.toString()
+    vertor.push(prompt("Escreva um Numero : "))
 }
-console.log(mostra)
+console.log(vetor)
