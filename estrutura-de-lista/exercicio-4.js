@@ -1,19 +1,17 @@
 /*
     4 - Faça um Programa que leia um vetor de 10 caracteres, e diga quantas consoantes foram lidas. Imprima as consoantes.
 */
-let consoante = 0
+
 const vogais = ["a", "e", "i", "o", "u"]
-let palavra = prompt("Escreva 10 Letras :")
-while (palavra.length < 10) {
-    palavra = prompt("Escreva 10 Letras :")
+const consoantes = []
+
+for (let i = 0; i < 10; i++) {
+    const palavra = prompt("Escreva uma Letra :")
+    if (vogais.includes(palavra) === false) {
+        consoantes.push(palavra)
+    }
 }
 
-if (palavra.includes(vogais) === false) {
-    consoante += 1
-}
+console.log({ consoantes: consoantes, total: consoantes.length })
 
-console.log(consoante)
 
-/* 
-como separar a palavra para verificacao,
-*/
