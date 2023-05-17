@@ -3,6 +3,6 @@
 */
 let vetor = []
 for (let i = 0; i < 5; i++) {
-    vertor.push(prompt("Escreva um Numero : "))
+    vetor.push(prompt("Escreva um Numero : "))
 }
 console.log(vetor)
