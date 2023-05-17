@@ -19,3 +19,7 @@ for (let i3 = 0; i3 < 10; i3++) {
     vetor3.push(prompt("Escreva um Numero : "))
 }
 console.log(vetor3)
+
+/*
+como intercalar os 3 
+*/
