@@ -15,5 +15,5 @@ if (palavra.includes(vogais) === false) {
 console.log(consoante)
 
 /* 
-como separar a palvra para verificacao,
+como separar a palavra para verificacao,
 */
