@@ -2,11 +2,12 @@
     9 - Faça um Programa que leia um vetor A com 10 números inteiros, calcule e mostre a soma dos quadrados dos elementos do vetor.
 */
 
+let vetor = []
 let soma = 0
 for (let i = 0; i < 10; i++) {
-    let vetor = parseInt(prompt("Escreva um Numero : "))
-    let quadrado = Math.pow(vetor, vetor)
+    const numero = parseInt(prompt("Escreva um Numero Inteiro : "))
+    const quadrado = Math.pow(numero, numero)
     soma = soma + quadrado
+    vetor.push(soma)
 }
-
-console.log(`A soma dos Quadrados dos Vetores da : ${soma}`)
+console.log({ soma: vetor })
