@@ -10,4 +10,4 @@ for (let i = 0; i < 10; i++) {
     soma = soma + quadrado
     vetor.push(soma)
 }
-console.log({ soma: vetor })
+console.log({ soma: soma, vetor: vetor })
