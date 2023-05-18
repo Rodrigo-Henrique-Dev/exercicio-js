@@ -2,17 +2,15 @@
     7 - Faça um Programa que leia um vetor de 5 números inteiros, mostre a soma, a multiplicação e os números.
 */
 
-let mostra = ""
+let vetor = []
 let soma = 0
-let vetor = null
+let multiplicacao = 0
 for (let i = 0; i < 5; i++) {
-    vetor = parseInt(prompt("Escreva um Numero : "))
-    soma = soma + vetor
-    mostra = mostra + " - " + vetor.toString()
+    const numero = parseInt(prompt("Escreva um Numero : "))
+    soma = soma + numero
+    multiplicacao = soma * numero
+    vetor.push(numero)
 }
-let multiplicação = vetor * 5
-
-console.log(`Os numeros sao : ${mostra}\n` +
-    `A soma dos Numeros sao : ${soma}\n` +
-    `A multiplicacao é : ${multiplicação}`
-)
+console.log(`a soma é : ${soma}\n` +
+    `a multiplicacao é : ${multiplicacao}\n` +
+    `Os numeros sao : ${vetor}`)
