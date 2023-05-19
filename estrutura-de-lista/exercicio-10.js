@@ -15,12 +15,12 @@ for (let i = 0; i < 20; i++) {
         impar.push(numero)
     }
 }
-for (let i2 = 0; i2 < 20; i2++) {
+for (let i2 = 1; i2 <= 20; i2++) {
     if (i2 % 2 === 0) {
-        numeros = par[contadorPar]
+        numeros[i2] = par[contadorPar]
         contadorPar++
     } else {
-        numeros = impar[contadorImpar]
+        numeros[i2] = impar[contadorImpar]
         contadorImpar++
     }
 }
