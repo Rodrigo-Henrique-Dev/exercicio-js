@@ -12,3 +12,8 @@ for (let i = 1; i <= expoente; i++) {
 }
 
 console.log({ RESULTADO: resultado })
+
+/* 
+nao funciona mesmo a estrutura estando lgicamente correta,
+ou erro na estrutura nao encontrado
+*/
