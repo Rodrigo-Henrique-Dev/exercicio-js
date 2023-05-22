@@ -4,8 +4,11 @@
 let soma = 0
 let array = []
 let media = 0
-
-const nome = prompt("Escreva o nome do atleta : ")
+let nome = ""
+nome = prompt("Escreva o nome do atleta : ")
+while (nome === "") {
+    nome = prompt("Escreva um nome valido do atleta : ")
+}
 for (let i = 0; i < 5; i++) {
     let salto = parseInt(prompt("Escreva a Altura do Salto : "))
     soma = soma + salto
