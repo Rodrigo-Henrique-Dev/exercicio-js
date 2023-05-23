@@ -17,12 +17,13 @@ let posicao = 0
 let inverso = null
 let soma = 0
 let media = 0
+let deveriaLerNota = true
 
-
-for (let i = 0; i < notas.length; i++) {
+while (deveriaLerNota) {
     const nota = parseFloat(prompt("Escreva uma nota :"))
     notas.push(nota)
     if (nota === -1) {
+        deveriaLerNota = false
         break;
     }
     soma = soma + nota
