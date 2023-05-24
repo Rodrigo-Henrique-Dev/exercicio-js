@@ -31,6 +31,7 @@ let c21 = 0
 let c22 = 0
 let c23 = 0
 let camisa = null
+
 while (camisa === null || camisa !== 0) {
     camisa = parseInt(prompt("Qual Jogador Votara de 1 ate 23(0 encerra a votacao : )"))
     if (camisa === 1) {
