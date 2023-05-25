@@ -26,8 +26,9 @@ Total                    8800
 O Sistema Operacional mais votado foi o Unix, com 3500 votos, correspondendo a 40% dos votos.
 
 */
-
+let votos = 0
 let array = []
+let porcentagem = 0
 for (let i = 0; i < 6; i++) {
     array.push(0)
 }
@@ -37,8 +38,10 @@ while (true) {
         break;
     }
     array[voto - 1] += 1
+    votos++
 }
 for (let i = 0; i < 6; i++) {
-    console.log(`O Sistema Operacional ${i + 1} teve ${array[i]} Votos}`)
+    porcentagem = parseInt(votos / i)
+    console.log(`O Sistema Operacional ${i + 1} teve ${array[i]} Votos com ${porcentagem}% dos Votos`)
 }
 
