@@ -27,51 +27,18 @@ O Sistema Operacional mais votado foi o Unix, com 3500 votos, correspondendo a 4
 
 */
 
-let voto = null
-let votos = 0
-let wPorcento = 0
-let uPorcento = 0
-let lPorcento = 0
-let nPorcento = 0
-let mPorcento = 0
-let oPorcento = 0
-
-while (voto = null || voto !== 0) {
-    voto = parseInt(prompt("Qual o Sistema Operacional que voce usa :\n 1-Windows\n 2-Unix\n 3-Linux\n 4-Netware\n 5-MacOs\n 6-Outro "))
-    while (voto > 6) {
-        voto = parseInt(prompt("Qual o Sistema Operacional que voce usa :\n 1-Windows\n 2-Unix\n 3-Linux\n 4-Netware\n 5-MacOs\n 6-Outro "))
-    }
-    if (voto === 1) {
-        windows++
-    }
-    if (voto === 2) {
-        unix++
-    }
-    if (voto === 3) {
-        linux++
-    }
-    if (voto === 4) {
-        netware++
-    }
-    if (voto === 5) {
-        macOs++
-    }
-    if (voto === 6) {
-        outro++
-    }
-    votos = windows + unix + linux + netware + macOs + outro
-    wPorcento = parseInt(votos / windows)
-    uPorcento = parseInt(votos / unix)
-    lPorcento = parseInt(votos / linux)
-    nPorcento = parseInt(votos / netware)
-    mPorcento = parseInt(votos / macOs)
-    oPorcento = parseInt(votos / outro)
+let array = []
+for (let i = 0; i < 6; i++) {
+    array.push(0)
 }
-console.log(`Final da votacao :\n` +
-    `Windows teve ${windows} com ${wPorcento}% de voto\n` +
-    `Windows teve ${unix} com ${uPorcento}% de voto\n` +
-    `Windows teve ${linux} com ${lPorcento}% de voto\n` +
-    `Windows teve ${netware} com ${nPorcento}% de voto\n` +
-    `Windows teve ${macOs} com ${mPorcento}% de voto\n` +
-    `Windows teve ${outro} com ${oPorcento}% de voto\n`
-)
+while (true) {
+    const voto = parseInt(prompt("Qual sistema Operacional voce Utiliza :\n 1-Windows\n 2-Unix\n 3-Linux\n 4-Netware\n 5-MacOs\n 6-Outro"))
+    if (voto === 0) {
+        break;
+    }
+    array[voto - 1] += 1
+}
+for (let i = 0; i < 6; i++) {
+    console.log(`O Sistema Operacional ${i + 1} teve ${array[i]} Votos}`)
+}
+
