@@ -13,7 +13,14 @@ function nesimo(n) {
     let mensagem = ""
     for (let i = 0; i < n; i++) {
         mensagem = mensagem + " " + n
-        console.log(mensagem)
+    }
+    return mensagem
+}
+
+function linhas(n) {
+    for (let i = 1; i <= n; i++) {
+        const resultado = nesimo(i)
+        console.log(resultado)
     }
 }
-nesimo(10)
+linhas(5)
