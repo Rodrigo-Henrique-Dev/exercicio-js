@@ -13,3 +13,6 @@ function valorPagamento(n1, n2) {
     }
 }
 console.log(valorPagamento(45, 50))
+
+// Como armazenar os pagamentos(pensei em array)
+// Como rodar ate o N1 ser 0 (precisaria de outra funcao)
