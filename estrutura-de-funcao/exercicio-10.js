@@ -3,10 +3,6 @@
 */
 
 
-// 1 - Lancar um par de dados de (2 ate 12)
-// 2 - Implementar as condicoes do jogo
-// 3 - 
-
 function jogandoDados() {
     let dado1 = Math.floor(Math.random() * 6 + 1)
     let dado2 = Math.floor(Math.random() * 6 + 1)
