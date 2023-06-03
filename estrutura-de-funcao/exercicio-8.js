@@ -2,10 +2,10 @@
     8 - Faça uma função que informe a quantidade de dígitos de um determinado número inteiro informado.
 */
 
-function digitos(n1) {
-    let numero = n1.toString()
-    let tamanho = numero.length
-    return tamanho
+function contador(numero) {
+    numero = numero.toString()
+    let quantidade = numero.length
+    return quantidade
 }
-let digitos = digitos(tamanho)
-console.log(digitos)
+quantidadeDigitos = contador(54333)
+console.log(quantidadeDigitos)
