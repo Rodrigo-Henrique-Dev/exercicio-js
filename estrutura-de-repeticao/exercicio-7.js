@@ -11,7 +11,6 @@ for (let contador = 0; contador < 5; contador++) {
         max = numero
     }
 }
-console.log(typeof (numeros))
 console.log(`O maior numero é o : ${max}`)
 
 
