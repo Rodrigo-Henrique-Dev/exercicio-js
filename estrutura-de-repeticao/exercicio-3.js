@@ -7,40 +7,29 @@
     Estado Civil: 's', 'c', 'v', 'd';
 */
 
-let nome = prompt("Escreva seu Nome")
-
-while (nome.length <= 3) {
-    nome = prompt("Escreva um Nome com Mais de 3 Letras")
+let nome = prompt("Escreva Seu Nome :")
+while (nome.length === 3) {
+    nome = prompt("Escreva um Nome Valido (Maior que 3 Letras)")
 }
 
-let idade = parseInt(prompt("Escreva Sua Idade"))
-
+let idade = parseInt(prompt("Escreva sua Idade : "))
 while (idade < 0 || idade > 150) {
-    idade = parseInt(prompt("Escreva uma Idade Valida :"))
+    idade = parseInt(prompt("Escreva uma Idade Valida (0 ate 150)"))
 }
 
-let salario = parseFloat(prompt("Escreva seu Salario"))
-
+let salario = parseInt(prompt("Escreva Seu Salario : "))
 while (salario <= 0) {
-    salario = parseFloat(prompt("Escreva um Salario Valido(acima de 0)"))
+    salario = parseInt(prompt("Escreva um Salario Valido (Maior que 0) : "))
 }
 
-let genero = prompt("Escreva F-Feminino ou M-Masculino").toUpperCase()
-
-while (genero !== "F" && genero !== "M") {
-    genero = prompt("Escreva uma letra Valida (F-Feminino ou M-Masculino)").toUpperCase()
+let sexo = prompt("Escreva M-Masculino ou F-Feminino").toLowerCase()
+while (sexo !== "m" && sexo !== "f") {
+    sexo = prompt("Escreva M-Masculino ou F-Feminino").toLowerCase()
 }
 
-let estadoCivil = prompt("Escreva Estado Civil (S-Solteiro(a)\n" +
-    "C-Casado(a)\n" +
-    "V-Viuvo(a)\n" +
-    "D-Divorciado(a)").toUpperCase()
-
-while (estadoCivil !== "S" && estadoCivil !== "C" && estadoCivil !== "V" && estadoCivil !== "D") {
-    prompt("Escreva Estado Civil Valido (S-Solteiro(a)\n" +
-        "C-Casado(a)\n" +
-        "V-Viuvo(a)\n" +
-        "D-Divorciado(a)").toUpperCase()
+let estadoCivil = prompt("Escreva seu Estado Civil (s-Solteiro, c-Casado, v-Viuvo, d-Divorciado").toLowerCase()
+while (estadoCivil !== "s" && estadoCivil !== "c" && estadoCivil !== "v" && estadoCivil !== "d") {
+    estadoCivil = prompt("Escreva seu Estado Civil (s-Solteiro, c-Casado, v-Viuvo, d-Divorciado").toLowerCase()
 }
 
-console.log(`Nome : ${nome}\nIdade : ${idade}\nSalario : ${salario}\nGenero : ${genero}\nEstado Civil : ${estadoCivil}`)
+console.log(`NOME : ${nome}\nIDADE : ${idade}\nSALARIO : ${salario}\nSEXO : ${sexo}\nESTADO CIVIL : ${estadoCivil} `)
