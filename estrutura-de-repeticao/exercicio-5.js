@@ -3,16 +3,19 @@
         Altere o programa anterior permitindo ao usuário informar as populações e as taxas de crescimento iniciais. Valide a entrada e permita repetir a operação.
 */
 
-let populacaoA = parseInt(prompt("Escreva a Populacao-A Inicial : "))
-let populacaoB = parseInt(prompt("Escreva a Populacao-B Inicial : "))
-let crescimentoA = parseFloat(prompt("Escreva a Taxa de Crescimento-A Inicial : "))
-let crescimentoB = parseFloat(prompt("Escreva a Taxa de Crescimento-B Inicial : "))
-let ano = 0
+let paisA = parseInt(prompt("Escreva o numero de Habitantes do País A :"))
+let taxaA = parseInt(prompt("Escreva a taxa de Crescimento do País A :"))
+let paisB = parseInt(prompt("Escreva o numero de Habitantes do País B :"))
+let taxaB = parseInt(prompt("Escreva a taxa de Crescimento do País B :"))
+let anos = 0
 
-while (populacaoA <= populacaoB) {
-    populacaoA = parseInt(populacaoA + (populacaoA * crescimentoA))
-    populacaoB = parseInt(populacaoB + (populacaoB * crescimentoB))
-    ano++
+while (paisA <= paisB) {
+    paisA = parseInt(paisA + (paisA * taxaA))
+    paisB = parseInt(paisB + (paisB * taxaB))
+    anos++
 }
 
-console.log(`Serao ${ano} Anos ate a Populacao A ultrapassar/igualar a Populacao B`)
+if (paisA > paisB) {
+    console.log(`O País A ultrapassou/Igualou o País B em ${anos} Anos\n` +
+        `Cada um Tendo ${paisA} e ${paisB} Habitantes Respectivamente`)
+} 
