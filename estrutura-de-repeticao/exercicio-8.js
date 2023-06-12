@@ -2,14 +2,11 @@
     8 - Faça um programa que leia 5 números e informe a soma e a média dos números.
 */
 
-let soma = 0
-for (let i = 0; i < 5; i++) {
-    let notas = parseFloat(prompt("Escreva uma Nota : "))
-    soma = soma + notas
+let notas = 0
+for (let i = 1; i <= 5; i++) {
+    let nota = parseInt(prompt(`Escreva Sua Nota ${i} : `))
+    notas = notas + nota
 }
+let media = notas / 5
 
-let media = soma / 5
-
-console.log(`A soma dos Numeros é : ${soma}\n` +
-    `A media dos Numeros é : ${media}`
-)
+console.log(`A media das 5 Notas foi ${media}`)
