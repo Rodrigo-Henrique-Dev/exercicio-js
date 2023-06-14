@@ -2,14 +2,12 @@
     24 - Faça um programa que calcule o mostre a média aritmética de N notas.
 */
 
-const notasQuantidade = parseInt(prompt("Escreva quantas notas deseja calcular : "))
-let soma = 0
+const notas = parseInt(prompt("Escreva o numero de Notas que deseja Calcular "))
 let media = 0
-let numero = 0
-for (let i = 0; i < notasQuantidade; i++) {
-    numeros = parseInt(prompt("Escreva uma Nota : "))
-    soma = soma + numeros
-    media = soma / notasQuantidade
+let soma = 0
+for (let i = 1; i <= notas; i++) {
+    let nota = parseInt(prompt(`Escreva sua ${i} Nota : `))
+    soma = soma + nota
+    media = soma / notas
 }
-
-console.log(`A media de ${notasQuantidade} Notas é : ${media}`)
+console.log(`Sua media foi de ${media}`)
