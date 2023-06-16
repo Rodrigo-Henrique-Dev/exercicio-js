@@ -9,18 +9,19 @@
     linha.
 */
 
-function nesimo(n) {
+function sequencia(numero) {
     let mensagem = ""
-    for (let i = 0; i < n; i++) {
-        mensagem = mensagem + " " + n
+    for (let i = 1; i <= numero; i++) {
+        mensagem = mensagem + " " + numero
     }
     return mensagem
 }
 
-function linhas(n) {
-    for (let i = 1; i <= n; i++) {
-        const resultado = nesimo(i)
+function linhas(numero) {
+    for (let i = 1; i <= numero; i++) {
+        const resultado = sequencia(i)
         console.log(resultado)
     }
 }
-linhas(5)
+
+linhas(10)
